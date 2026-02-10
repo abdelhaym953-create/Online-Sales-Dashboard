@@ -6,3 +6,6 @@ Missing Values in ---------> CustomerID and ShippingCost and WarehouseLocation
 drop unnecessary columns ----> InvoiceNo maybe StockCode
 check there is in InvoiceDate ---------->  '...'
 ----------------------------------------------
+----------------------------------------------
+----------------------------------------------
+
