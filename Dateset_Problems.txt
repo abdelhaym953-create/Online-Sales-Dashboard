@@ -1,0 +1,8 @@
+convert InvoiceDate ---------->  datetime 
+convert CustomerID to --------> int
+Quantity and UnitPrice --------> negative value 
+Discount value ---------> make it percentage
+Missing Values in ---------> CustomerID and ShippingCost and WarehouseLocation
+drop unnecessary columns ----> InvoiceNo maybe StockCode
+check there is in InvoiceDate ---------->  '...'
+
