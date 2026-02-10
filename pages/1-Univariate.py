@@ -192,7 +192,7 @@ else:
     if dominance > 51:
         st.warning("One category is dominant.")
 
-    elif (dominance > 35) and (dominance <50) :
+    elif (dominance > 36) and (dominance <50) :
         st.info("Some categories are more frequent.")
 
     else:
