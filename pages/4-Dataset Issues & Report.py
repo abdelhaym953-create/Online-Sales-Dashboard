@@ -73,4 +73,4 @@ if st.checkbox("🔍 View Full Profiling Report"):
 
 # ================= FOOTER =================
 st.markdown("---")
-st.caption("Advanced Analytics & Strategy | Developed by Eng. Mohamed 🚀📊")
+st.caption(" Developed by Eng. Mohamed 🚀📊")
