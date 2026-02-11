@@ -5,5 +5,6 @@ numpy==1.26.4
 statsmodels
 patsy==1.0.2
 scipy==1.15.3
-ydata-profiling==5.3.1
+ydata-profiling==4.18.1
+
 
