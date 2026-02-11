@@ -11,10 +11,7 @@ import streamlit as st
 st.set_page_config(page_title="Online Sales Dashboard", layout="wide",page_icon='online-shop_164427.png')
 
 
-# ==================================================
-# LOAD DATA
-# ==================================================
-
+# ================= Load Data =================
 @st.cache_data
 def load_data():
     df = pd.read_csv("cleaned_dataset.csv")
@@ -222,7 +219,7 @@ with tab2:
     )
 
     metric = c2.selectbox(
-        "Metric",
+        "Numeric",
         num_cols,
         key="cat_y"
     )
@@ -305,7 +302,7 @@ with tab3:
     )
 
     metric = c2.selectbox(
-        "Metric",
+        "Numeric",
         num_cols,
         key="time_metric"
     )
