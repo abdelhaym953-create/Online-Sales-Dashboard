@@ -70,3 +70,7 @@ if st.checkbox("🔍 View Full Profiling Report"):
     profile = ProfileReport(df, explorative=True)
     profile_html = profile.to_html()
     html(profile_html, height=900, scrolling=True)
+
+# ================= FOOTER =================
+st.markdown("---")
+st.caption("Advanced Analytics & Strategy | Developed by Eng. Mohamed 🚀📊")
