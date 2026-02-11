@@ -11,7 +11,10 @@ import streamlit as st
 st.set_page_config(page_title="Online Sales Dashboard", layout="wide",page_icon='online-shop_164427.png')
 
 
-# ================= Load Data =================
+# ==================================================
+# LOAD DATA
+# ==================================================
+
 @st.cache_data
 def load_data():
     df = pd.read_csv("cleaned_dataset.csv")
