@@ -201,4 +201,4 @@ This dashboard supports **strategic decision-making**, not just reporting.
 
 # ================= FOOTER =================
 st.markdown("---")
-st.caption("Advanced Analytics & Strategy | Developed by Eng. Mohamed 🚀📊")
+st.caption("Advanced Analytics & Strategy | Developed by Eng. Mohamed")
