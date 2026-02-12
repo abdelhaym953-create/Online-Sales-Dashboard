@@ -123,7 +123,9 @@ with st.expander("1️⃣ Do higher discounts lead to more returned orders?"):
         y="discount",
         text_auto=True,
         title="Average Discount by Return Status",
-        labels={"IsReturned": "Returned (0=No, 1=Yes)"}
+        labels={"IsReturned": "0 = NotReturned and 1 = Returned"},
+        color='IsReturned'
+
     )
 
     st.plotly_chart(fig, use_container_width=True)
