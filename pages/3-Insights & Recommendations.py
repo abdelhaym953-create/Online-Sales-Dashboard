@@ -115,7 +115,7 @@ st.subheader("📌 Key Business Questions & Insights")
 # =====================================================
 with st.expander("1️⃣ Do higher discounts lead to more returned orders?"):
 
-    data = df.groupby("IsReturned")["discount"].mean().reset_index()
+    data = df.groupby("IsReturned")["discount"].mean().round(4).reset_index()
 
     fig = px.bar(
         data,
@@ -171,7 +171,8 @@ with st.expander("3️⃣ Which country has the highest return rate?"):
         x="country",
         y="IsReturned",
         text_auto=".2%",
-        title="Top 10 Countries by Return Rate"
+        title="Top 10 Countries by Return Rate",
+        color='country'
     )
 
     st.plotly_chart(fig, use_container_width=True)
@@ -283,7 +284,8 @@ with st.expander("8️⃣ Which payment method generates the highest revenue?"):
         x="paymentmethod",
         y="Net_Revenue",
         text_auto=True,
-        title="Revenue by Payment Method"
+        title="Revenue by Payment Method",
+        color= "paymentmethod"
     )
 
     st.plotly_chart(fig, use_container_width=True)
@@ -305,7 +307,8 @@ with st.expander("9️⃣ Which category has the highest return rate?"):
         x="category",
         y="IsReturned",
         text_auto=".2%",
-        title="Return Rate by Category"
+        title="Return Rate by Category",
+        color = 'category'
     )
 
     st.plotly_chart(fig, use_container_width=True)
