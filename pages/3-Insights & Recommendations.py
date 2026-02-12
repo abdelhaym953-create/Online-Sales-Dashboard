@@ -123,8 +123,7 @@ with st.expander("1️⃣ Do higher discounts lead to more returned orders?"):
         y="discount",
         text_auto=True,
         title="Average Discount by Return Status",
-        labels={"IsReturned": "0 = NotReturned and 1 = Returned"},
-        color='IsReturned'
+        labels={"IsReturned": "0 = NotReturned   and  1 = Returned"},
 
     )
 
