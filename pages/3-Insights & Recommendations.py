@@ -67,14 +67,14 @@ st.divider()
 
 st.subheader("🎯 Executive Summary")
 
-total_revenue = df["Net_Revenue"].sum()
-total_profit = df["Profit"].sum()
+total_sales = df["Gross_Sales"].sum()
+net_revenue = df["Net_Revenue"].sum()
 return_rate = df["IsReturned"].mean()
 top_category = df.groupby("category")["Net_Revenue"].sum().idxmax()
 top_channel = df.groupby("saleschannel")["Net_Revenue"].sum().idxmax()
 
 st.markdown(f"""
-This business generated *{total_revenue:,.0f}   in total revenue with a total profit of  *{total_profit:,.0f}**.
+This business generated *{total_sales:,.0f}   in total revenue with a total profit of  *{net_revenue:,.0f}**.
 
 - 📦 Top Revenue Category: **{top_category}**
 - 🛒 Best Sales Channel: **{top_channel}**
@@ -84,21 +84,6 @@ This business generated *{total_revenue:,.0f}   in total revenue with a total pr
 """)
 
 st.divider()
-
-
-# =====================================================
-# 📊 KPI DASHBOARD
-# =====================================================
-
-st.subheader("📊 Key Performance Indicators")
-
-col1, col2, col3, col4 = st.columns(4)
-
-col1.metric("💰 Total Revenue", f"${total_revenue:,.0f}")
-col2.metric("📈 Total Profit", f"${total_profit:,.0f}")
-col3.metric("🔄 Return Rate", f"{return_rate:.2%}")
-col4.metric("📦 Total Orders", f"{len(df):,}")
-
 
 
 

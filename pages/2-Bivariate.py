@@ -104,9 +104,9 @@ with tab1:
         "Chart Type",
         [
             "Correlation Scatter",
-            "Regression Line",
+            #"Regression Line",
             "Distribution View",
-            "Density Heatmap"
+            #"Density Heatmap"
         ],
         key="num_chart"
     )

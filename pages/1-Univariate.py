@@ -56,11 +56,10 @@ if analysis_type == "Numerical":
 
 
     # ---------- KPIs ----------
-    c1, c2, c3, c4, c5 = st.columns(5)
+    c1, c2, c4, c5 = st.columns(4)
 
     c1.metric("Mean", f"{df[col].mean():,.2f}")
     c2.metric("Median", f"{df[col].median():,.2f}")
-    c3.metric("Std", f"{df[col].std():,.2f}")
     c4.metric("Min", f"{df[col].min():,.2f}")
     c5.metric("Max", f"{df[col].max():,.2f}")
 
